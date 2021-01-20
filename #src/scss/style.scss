@@ -1,5 +1,11 @@
 @import "_stylenull";
+@import "_layout";
 @import "_header";
 body {
     font-family: "Raleway";
+    color: #090750;
+}
+
+a {
+    color: inherit
 }
