@@ -3,7 +3,9 @@
     background: url(../img/header-bg.png) center / cover no-repeat;
     position: relative;
     color: white;
-    padding-right: 44px;
+    .container {
+        padding-right: 59px;
+    }
     &:before {
         content: "";
         width: 100%;
@@ -79,7 +81,7 @@
     }
     &__line-inner {
         position: absolute;
-        right: 0;
+        right: 44px;
         top: 50vh;
         transform: translateY(-50%);
         height: 248px;
@@ -124,7 +126,7 @@
     height: calc(50vh - 124px);
     background: white;
     position: absolute;
-    right: -22px;
+    right: 22px;
     z-index: 1;
     &--before {
         top: 0;
@@ -133,10 +135,6 @@
         top: calc(50vh + 124px)
     }
 }
-
-.container {}
-
-.logo {}
 
 .menu {
     &__list {
@@ -167,20 +165,7 @@
             background: #05950F;
             bottom: -2px;
             transition: all 0.4s ease;
-            // pointer-events: none;
+            pointer-events: none;
         }
     }
-}
-
-.phone-icon {}
-
-.btn {
-    width: fit-content;
-    padding: 20px 45px;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #090750;
-    background: #83F78B;
 }

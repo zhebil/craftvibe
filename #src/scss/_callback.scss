@@ -1,0 +1,54 @@
+.callback {
+    background: url(../img/callback-bg.png) center/ cover no-repeat;
+    color: white;
+    position: relative;
+    padding: 60px 0;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(101.07deg, #090750 0%, #09290C 88.54%);
+        opacity: 0.8;
+    }
+    &__inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+        margin-bottom: 40px;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 650px;
+        width: 100%;
+    }
+    &__input {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 21px;
+        width: 370px;
+    }
+    &__btn {
+        text-transform: none;
+    }
+}
