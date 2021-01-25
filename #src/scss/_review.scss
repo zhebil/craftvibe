@@ -1,0 +1,85 @@
+.review {
+    &__shadow {
+        width: fit-content;
+        margin-left: auto;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__title {}
+    &__slider {}
+    &__card {
+        background: #F8F8F8;
+        padding: 30px;
+    }
+    &__card-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__img {
+        margin-right: 30px;
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 2px solid #83F78B;
+            border-radius: 50%;
+        }
+    }
+    &__descr {}
+    &__name {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        margin-bottom: 5px;
+    }
+    &__link {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+        color: #B4B4B4;
+    }
+    &__card-bottom {}
+    &__text {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+    }
+    .swiper-pagination {
+        font-family: "Open Sans";
+        position: static;
+        width: 90px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.05em;
+        color: #090750;
+        opacity: 0.1;
+    }
+}
+
+.container {}
+
+.title {
+    &--shadow {}
+    &--regular {}
+}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.description {}
+
+.slider-btns {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
