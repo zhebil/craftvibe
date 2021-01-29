@@ -1,5 +1,9 @@
 @import "_stylenull";
 @import "_layout";
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Raleway";
     color: #090750;
@@ -21,3 +25,5 @@ section {
 @import "_work";
 @import "_review";
 @import "_footer";
+@import "_popup";
+@import "_adaptive";

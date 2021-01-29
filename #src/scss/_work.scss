@@ -45,7 +45,17 @@
         }
     }
     &__body {}
-    &__item {}
+    &__item {
+        opacity: 0;
+        transition: all 2.4s ease;
+        height: 0;
+        overflow: hidden;
+        &.active {
+            height: auto;
+            overflow: visible;
+            opacity: 1;
+        }
+    }
     &__descr {
         font-weight: 300;
         text-align: center;

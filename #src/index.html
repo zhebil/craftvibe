@@ -20,7 +20,7 @@
                         <p>Приятно, граждане, наблюдать, как реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, заблокированы в рамках своих
                             собственных рациональных ограничений. В целом, конечно, экономическая повестка сегодняшнего дня обеспечивает широкому кругу (специалистов) участие в формировании укрепления моральных ценностей! </p>
                     </div>
-                    <button class="about__btn btn-outlined btn-outlined--blue">Связаться с нами</button>
+                    <button class="about__btn btn-outlined btn-outlined--blue js-popup-open">Связаться с нами</button>
                 </div>
             </div>
         </section>
@@ -30,13 +30,13 @@
                     <h2 class="callback__title">Оформите заявку и наш мастер перезвонит вам</h2>
                     <p class="callback__descr description">Выезд нашего специалиста и расчет стоимости работ бесплатны</p>
                     <form action="/" class="callback__form">
-                        <input type="tel" class="callback__input" placeholder="Ваш номер телефона">
+                        <input type="tel" class="callback__input" name="phone" placeholder="Ваш номер телефона" required>
                         <button class="btn callback__btn">Оформить заявку</button>
                     </form>
                 </div>
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <div class="advantages__shadow title title--shadow">Преимущества</div>
             </div>
@@ -77,6 +77,75 @@
                     <li class="work__btn-list-item"><button class="work__btn btn-outlined btn-outlined--white">Работы из камня</button></li>
                 </ul>
                 <div class="work__body">
+                    <div class="work__item active">
+                        <div class="work__descr description">
+                            <p>Благодаря применению натурального и искуственного камня удаеться облагородить любой дом. Сегодня на рынке строительных материалов можно найти камень под любые задачи, поэтому владельцы частного дома или квартиры смогут облагородить
+                                их, пользуясь лучшими изделиями из камня. Если вы давно хотели купить изделия из натуральных камней, то проще всего сделать это на нашем сайте. Продукция из камня отличается широким асортиментом, и мы готовы воплотить в
+                                реальность ваши любые идеи и пожелания.</p>
+                        </div>
+                        <div class="swiper-container work__slider">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="slider-btns">
+                            <button class="swiper-button-prev"></button>
+                            <button class="swiper-button-next"></button>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__descr description">
+                            <p>Благодаря применению натурального и искуственного камня удаеться облагородить любой дом. Сегодня на рынке строительных материалов можно найти камень под любые задачи, поэтому владельцы частного дома или квартиры смогут облагородить
+                                их, пользуясь лучшими изделиями из камня. Если вы давно хотели купить изделия из натуральных камней, то проще всего сделать это на нашем сайте. Продукция из камня отличается широким асортиментом, и мы готовы воплотить в
+                                реальность ваши любые идеи и пожелания.</p>
+                        </div>
+                        <div class="swiper-container work__slider">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="slider-btns">
+                            <button class="swiper-button-prev"></button>
+                            <button class="swiper-button-next"></button>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__descr description">
+                            <p>Благодаря применению натурального и искуственного камня удаеться облагородить любой дом. Сегодня на рынке строительных материалов можно найти камень под любые задачи, поэтому владельцы частного дома или квартиры смогут облагородить
+                                их, пользуясь лучшими изделиями из камня. Если вы давно хотели купить изделия из натуральных камней, то проще всего сделать это на нашем сайте. Продукция из камня отличается широким асортиментом, и мы готовы воплотить в
+                                реальность ваши любые идеи и пожелания.</p>
+                        </div>
+                        <div class="swiper-container work__slider">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-1.png" alt=""></li>
+                                <li class="swiper-slide work__slide"><img src="./img/slider/slider-img-2.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="slider-btns">
+                            <button class="swiper-button-prev"></button>
+                            <button class="swiper-button-next"></button>
+                        </div>
+                    </div>
                     <div class="work__item">
                         <div class="work__descr description">
                             <p>Благодаря применению натурального и искуственного камня удаеться облагородить любой дом. Сегодня на рынке строительных материалов можно найти камень под любые задачи, поэтому владельцы частного дома или квартиры смогут облагородить
@@ -160,6 +229,7 @@
     <!--  -->
     @@include("_footer.html")
     <!--  -->
+    @@include("_popup.html")
     <script src="./js/script.min.js"></script>
 </body>
 

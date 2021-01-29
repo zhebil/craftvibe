@@ -1,14 +1,21 @@
-<header class="header">
+<header class="header" id="top">
     <div class="header__top">
         <div class="container">
             <div class="header__top-inner">
-                <div class="header__logo logo"><img src="./img/logo.png" alt=""></div>
+                <a href="#top" class="header__logo logo"><img src="./img/logo.png" alt=""></a>
                 <nav class="header__menu menu">
+                    <button class="menu__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="menu__list">
-                        <li class="menu__list-item"><a href="#about" class="menu__link">О нас</a></li>
-                        <li class="menu__list-item"><a href="#advantages" class="menu__link">Преимущества</a></li>
-                        <li class="menu__list-item"><a href="#works" class="menu__link">Примеры работ</a></li>
-                        <li class="menu__list-item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                        <div class="container">
+                            <li class="menu__list-item"><a href="#about" class="menu__link">О нас</a></li>
+                            <li class="menu__list-item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+                            <li class="menu__list-item"><a href="#works" class="menu__link">Примеры работ</a></li>
+                            <li class="menu__list-item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                        </div>
                     </ul>
                 </nav>
                 <div class="header__contacts">
@@ -30,7 +37,7 @@
         <div class="container">
             <h1 class="header__title">Строительные работы любой сложности</h1>
             <p class="header__description">Проектирование, изготовление и монтаж изделий из натурального и искусственного камня, дерева и других материалов</p>
-            <button class="header__button btn">
+            <button class="header__button btn js-popup-open">
                     Оформить заявку
             </button>
         </div>
@@ -60,3 +67,7 @@
     </div>
 
 </header>
+
+<div class="header__scroll">
+
+</div>

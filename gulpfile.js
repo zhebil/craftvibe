@@ -39,7 +39,7 @@ let { src, dest } = require("gulp"),
   imagemin = require("gulp-imagemin"),
   webp = require("gulp-webp"),
   webphtml = require("gulp-webp-html"),
-  // webpcss = require("gulp-webp-css"),
+  webpcss = require("gulp-webp-css"),
   svgSprite = require("gulp-svg-sprite"),
   ttf2woof = require("gulp-ttf2woff"),
   ttf2woof2 = require("gulp-ttf2woff2"),
@@ -147,7 +147,7 @@ function css() {
         cascade: true,
       })
     )
-    // .pipe(webpcss())
+    .pipe(webpcss())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(

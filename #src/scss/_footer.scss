@@ -43,6 +43,11 @@
         &:not(:last-child) {
             margin-bottom: 25px;
         }
+        &:hover {
+            .footer__contact-img {
+                animation: din-don 0.3s linear infinite;
+            }
+        }
     }
     &__contact-img {
         margin-right: 15px;
@@ -63,6 +68,16 @@
             letter-spacing: 0.1em;
             font-family: "Open Sans";
         }
+        a {
+            transition: all 0.4s ease;
+            &:hover,
+            &:focus {
+                color: #83F78B;
+            }
+            &:active {
+                color: #05950F;
+            }
+        }
     }
     &__icons {
         width: 170px;
@@ -72,7 +87,21 @@
         padding-top: 30px;
         border-top: 2px solid white;
     }
-    &__icon {}
+    &__icon {
+        svg {
+            path {
+                transition: all 0.4s ease;
+            }
+        }
+        &:hover,
+        &:focus {
+            svg {
+                path {
+                    fill: #83F78B
+                }
+            }
+        }
+    }
     &__right {
         max-width: 470px;
     }
@@ -85,6 +114,15 @@
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 20px;
+        border: 1px solid white;
+        transition: all 0.4s ease;
+        &:hover,
+        &:focus {
+            border: 1px solid #B4B4B4
+        }
+        &:active {
+            border: 1px solid #090750;
+        }
     }
     &__btn {
         width: 100%;
